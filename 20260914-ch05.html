@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>表格 table</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/myall.css">
+    <style>
+        body {
+            background-color: var(--bg002);
+        }
+
+        h1 {
+            margin-top: 20px;
+            color: var(--textcr001);
+        }
+
+        h3 {
+            margin-top: 20px;
+            color: var(--textcr001);
+        }
+
+        .box01 {
+            width: 100%;
+            margin-top: 30px;
+            margin-bottom: 30px;
+            padding: 30px;
+            border: 0.5px solid var(--border001);
+            color: var(--textcr001);
+        }
+
+        @media screen and (max-width:768px) {
+            .table-rwd thead {
+                display: none;
+            }
+
+            .table-rwd tbody tr {
+                display: block;
+                border: 0.5px solid var(--border003);
+                margin-top: 15px;
+            }
+
+            .table-rwd tbody tr td {
+                display: block;
+            }
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>ch05 | 表格 table </h1>
+        <h3> (table-striped 間格分色 table-bordered+上邊框 table-hover滑入效果 table-sm 縮減padding)</h3><br>
+        <table class="table table-striped  table-bordered table-hover table-sm table-rwd">
+            <caption>選物清單 1.0</caption>
+            <thead class="table-active">
+                <tr>
+                    <th>編號</th>
+                    <th>名稱</th>
+                    <th>價格</th>
+                    <th>備註</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="table-danger">
+                    <td>01</td>
+                    <td>燈具</td>
+                    <td>580</td>
+                    <td>黃光</td>
+                </tr>
+                <tr class="table-success">
+                    <td>02</td>
+                    <td>餐具</td>
+                    <td>280</td>
+                    <td>陶瓷</td>
+                </tr>
+                <tr class="table-warning">
+                    <td>03</td>
+                    <td>布料</td>
+                    <td>680</td>
+                    <td>亞麻</td>
+                </tr>
+                <tr class="table-info">
+                    <td>04</td>
+                    <td>燈具</td>
+                    <td>980</td>
+                    <td>白光</td>
+                </tr>
+                <tr class="table-active">
+                    <td>05</td>
+                    <td>布料</td>
+                    <td><del>780</del>990</td>
+                    <td>純棉</td>
+                </tr>
+            </tbody>
+        </table>
+
+
+
+
+
+
+    </div>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
